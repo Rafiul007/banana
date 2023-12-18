@@ -7,10 +7,10 @@ import banana from '../assets/banana.js'
 import Card from './Card.jsx'
 function Scroll() {
   useEffect(() => {
-    Aos.init({duration:2000})
+    Aos.init({ duration: 2000 })
 
   }, [])
-  
+
   return (
     <div className="container">
       <div className="nav-bar">
@@ -36,18 +36,18 @@ function Scroll() {
       </div>
       <div className="sub-container-2">
         <div className="mind-da-gap" data-aos="fade-up">
-        <h1> “Mind the gap! Mind the gap! Mind the gap!” — Minions</h1>
+          <h1> “Mind the gap! Mind the gap! Mind the gap!” — Minions</h1>
         </div>
         <div className="minions-container">
-          <div className="minion" data-aos="zoom-in">
-            <Card/>
-          </div>
-          <div className="minion" data-aos="zoom-in">
-            <Card/>
-          </div>
-          <div className="minion" data-aos="zoom-in">
-            <Card/>
-          </div>
+          {
+            banana.map((item, index) => {
+              return (
+                <div className="minion" data-aos="zoom-in">
+                  <Card img={item.img} name={item.name} banana={item.banana} />
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     </div>

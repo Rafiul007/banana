@@ -15,7 +15,9 @@ const bananaData = [
     },
     {
         img: darwin,
-        name: "Darwin da Minion",
-        banana: "Darwin is indeed quite egoistic. Sometimes, his actions cause troubles for Gru and his fellow Minions. Uniquely, he is polite and well-behaved with other people."
+        name: "Darwin",
+        banana: "Darwin is indeed quite egoistic. His actions cause troubles for Gru and his fellow Minions. He is polite and well-behaved"
     },
 ]
+
+export default bananaData;
