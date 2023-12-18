@@ -3,7 +3,8 @@ import './Scroll.css'
 import hero from '../assets/hero.jpg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-
+import banana from '../assets/banana.js'
+import Card from './Card.jsx'
 function Scroll() {
   useEffect(() => {
     Aos.init({duration:2000})
@@ -28,14 +29,26 @@ function Scroll() {
           <img src={hero} alt='hero' />
         </div>
         <div className="box2" data-aos="fade-left">
-          <h1>Hola! Hoomans</h1>
-          <p>C’est banana! Hahaha! Miam Miam! Huh?</p>
+          <h1>Hola!👋 Hoomans</h1>
+          <p>C’est banana!🍌 Hahaha! Miam Miam! Huh?</p>
           <button className='banana-btn'>Banana 🍌</button>
         </div>
       </div>
-      <div className="sub-container">
-        <div className="box1"></div>
-        <div className="box2"></div>
+      <div className="sub-container-2">
+        <div className="mind-da-gap" data-aos="fade-up">
+        <h1> “Mind the gap! Mind the gap! Mind the gap!” — Minions</h1>
+        </div>
+        <div className="minions-container">
+          <div className="minion" data-aos="zoom-in">
+            <Card/>
+          </div>
+          <div className="minion" data-aos="zoom-in">
+            <Card/>
+          </div>
+          <div className="minion" data-aos="zoom-in">
+            <Card/>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ import Scroll from './components/Scroll';
 function App() {
   return (
     <>
-    <Card/>
+    <Scroll/>
     </>
   );
 }

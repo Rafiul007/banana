@@ -16,7 +16,8 @@
     margin: auto;
     display: flex;
     padding: 20px 30px;
-    gap: 10px
+    gap: 10px;
+
 }
 .nav-bar{
     width: 100%;
@@ -87,4 +88,30 @@
 .banana-btn:hover{
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 
+}
+.sub-container-2{
+    max-width: 1200px;
+    width: 100%;
+    /* background: lightgrey; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 100px;
+}
+.mind-da-gap{
+    background-color: #f1f140;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.minions-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 10px;
+    gap: 20px;
 }
