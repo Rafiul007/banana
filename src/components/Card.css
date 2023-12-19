@@ -17,9 +17,10 @@
     filter: grayscale(1);
 }
 .card-container:hover{
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     filter: grayscale(0);
     cursor: pointer;
+    transform: scale(1.05);
 }
 .img-container{
     width: 100%;

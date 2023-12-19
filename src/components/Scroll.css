@@ -9,9 +9,8 @@
     height: 100%;
 }
 .sub-container{
-    max-width: 1200px;
+    max-width: 1700px;
     width: 100%;
-    /* background: lightgrey; */
     height: 80dvh;
     margin: auto;
     display: flex;
@@ -27,14 +26,19 @@
     top: 0;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     z-index: 1111;
+    margin: auto;
 }
 .navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1700px;
     margin: auto;
     height: 100%;
+}
+.navbar-container h1{
+    font-weight: 600;
+    font-size: 50px;
 }
 .menu ul{
     display: flex;
@@ -45,7 +49,12 @@
 .menu ul li{
     list-style: none;
     font-weight: 600;
-    font-size: large;
+    font-size: larger;
+    cursor: pointer;
+}
+.menu li:hover{
+    transition: .3s ease-in-out;
+    transform: scale(1.05);
 }
 .box1{
     width: 60%;
@@ -90,14 +99,14 @@
 
 }
 .sub-container-2{
-    max-width: 1200px;
+    max-width: 1700px;
     width: 100%;
     /* background: lightgrey; */
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 30px;
+    padding: 30px 30px;
     gap: 100px;
 }
 .mind-da-gap{
@@ -111,7 +120,15 @@
 }
 .minions-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 20px 10px;
     gap: 40px 20px;
+}
+.footer-container{
+    background: #f1f140;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

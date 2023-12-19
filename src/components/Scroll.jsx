@@ -50,6 +50,9 @@ function Scroll() {
           }
         </div>
       </div>
+      <div className="footer-container">
+        <span>&copy; 2023 Minnions. All rights reserved.</span>
+      </div>
     </div>
   )
 }
